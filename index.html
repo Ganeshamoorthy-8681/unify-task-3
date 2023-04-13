@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../app.css">
+    <title>Unify</title>
+</head>
+<body>
+    <!-- this is a overlay used when the menu icons are clicked  -->
+    <div id="overlay"></div>
+    <!-- Naviagtion bar  -->
+    <nav class="navbar">
+
+        <ul class="navbar__links">
+            <!--This has all links  including brand logo-->
+                <li class="navbar__links--title" title="Welcome to Unify we serve what You need">Unify</li>
+                <li > <a href="#" class="navbar__links--link">Landing <i class="fa ">&#xf0d7;</i></a></li>
+                <li > <a href="#" class="navbar__links--link" >Pages <i class="fa ">&#xf0d7; </i></a></li>
+                <li > <a href="#" class="navbar__links--link">Blog <i class="fa ">&#xf0d7; </i></a></li>
+                <li > <a href="#" class="navbar__links--link">Docs <i class="fa">&#xf0d7; </i></a></li>
+        </ul>
+        <!-- this is a menu icon which is added in mobile view (hamburger menu) -->
+        <span class="navbar__menu-icon"></span>
+        <!-- THis  are the buttons  in navbar login and signup button -->
+        <div class="navbar__buttons">
+            <button class="navbar__buttons--login">Log in </button>
+            <button class="navbar__buttons--signup">Sign up</button>
+        </div>
+        <!-- this is a mobile dropdown  -->
+        <ul class="navbar__mobile-view navbar__mobile-view--compressed">
+            <li class="navbar__mobile-view--title" title="Welcome to Unify we serve what You need">Unify <i class="navbar__mobile-view--close-icon"></i></li>
+            <li><a href="#" class="navbar__mobile-view--link"> Landing <i class="fa ">&#xf0d7;</i></a></li>
+            <li><a href="#" class="navbar__mobile-view--link" >Pages <i class="fa ">&#xf0d7; </i></a></li>
+            <li><a href="#" class="navbar__mobile-view--link">Blog <i class="fa ">&#xf0d7; </i></a></li>
+            <li><a href="#" class="navbar__mobile-view--link">Docs <i class="fa">&#xf0d7; </i></a></li>
+            <button class="navbar__mobile-view--login-button"> Log in </button> <br>
+            <button class="navbar__mobile-view--signup-button"> Sign up</button>
+        </ul>
+    </nav>
+
+    <!-- content of the body starts -->
+    <div class="container-1">
+
+       <div class="container-1__img--wrapper">
+           <img class="container-1__img" src="images/logo-2.svg" alt="this is a logo" >
+       </div>
+    
+
+        <div class="container-1__content">
+
+            <b class="container-1__content--quote">SMALL BUSSINESS SOLUTION</b>
+            <span class="container-1__content--head1">Turn Online Shoppers into</span> 
+            <span class="container-1__content--head2">lifetime customers</span>
+
+              <div class="container-1__content--avatars">
+                    <div>
+                        <img class="container-1__content--avatars--icon"
+                            src="https://images.unsplash.com/photo-1582610285985-a42d9193f2fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80jpg"
+                            alt="">
+                        <img class="container-1__content--avatars--icon"
+                            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                            alt="">
+                        <img class="container-1__content--avatars--icon"
+                            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                            alt="">
+                        <img class="container-1__content--avatars--icon"
+                            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHByb2Zlc3Npb25hbCUyMHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=387&q=80"
+                            alt="">
+
+                        <svg width="30px" height="30px" class="container-1__content--avatars--icon">
+                            <circle r="15px" cx="13" cy="15" fill="#28374a"></circle>
+                            <text x="6" y="17" font-size="small" fill="white">7k</text>
+                        </svg>
+
+                    </div>
+
+                    <div class="container-1__content--avatars--description">
+                        <b> Trust pilot  </b> <br>
+                        <span>Rated best over 37k reviews</span>
+                    </div>
+                </div>
+                
+                   <div class="container-1__content--input-fields">
+                    <input type="text" placeholder="Your name">
+                    <input type="mail" placeholder="Your mail">
+                    <button type="menu">Gets Started</button>
+                </div>
+
+        </div>
+        
+        <div class="container-1__img--wrapper">
+            <img class="container-1__img" src="images/logo-3.svg" alt="this is a logo"> 
+        </div>
+        
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+</html>

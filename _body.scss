@@ -1,0 +1,113 @@
+@use './typography' as t;
+@import "mixins";
+@import "variables";
+
+
+.container-1{
+    @include flexible();
+    
+    margin-top: min(60px,10vh);
+
+
+    &__img{
+        &--wrapper{
+            width: 15vw;
+            max-width: 200px;
+            max-height: 150px;
+                @media screen and (max-width: $logo-breakpoint) {
+                        display: none;
+                  }
+        }
+}
+
+
+    &__content{
+        padding: 5px;
+        text-align: center;
+        @include flexible(column,$gap:5px);
+  
+        &--input-fields{
+                    margin-top: 20px;
+                    display: inline-flex;
+                    border-radius: 3px;
+                    border: 1px solid rgba(180, 179, 179, 0.3);
+                    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2);
+
+                    & input{
+                                padding: 15px;
+                                height: 35px;
+                                width: 35%;
+                                border: none;
+                                outline: none;
+                    }
+
+                    & button{
+                            margin: 3px;
+                            padding: 5px;
+                            width: 20%;
+                            border: 1px solid transparent;
+                            color: $signup-btn-color;
+                            background-color: $logo-bg-color;
+                            border-radius: 3px;
+                    }
+        }
+
+        &--quote{
+            @include t.quote();
+        }
+
+        &--avatars{
+             
+            white-space: nowrap;
+
+               @include flexible($gap:1%);
+               
+               @media screen and (max-width: $max-width-value-mobile){
+                    flex-direction: column;
+                     white-space: normal             
+                  }
+        }
+
+        &--avatars--icon{
+                border: 2.5px solid white;
+                width: 25px;
+                height: 25px;
+                object-fit: cover;
+                border-radius: 50%;
+
+                &:not(:first-child){
+                    margin-left: -12px;
+                }
+        }
+
+
+        &--avatars--description{
+            padding: 5px 10px;
+            @include t.quote();
+            border-left: 1px solid rgba(180, 179, 179, 0.3);
+
+            @media screen and (max-width:$max-width-value-mobile) {
+                border: none;
+            }
+
+        }
+
+
+            &--head1 {
+                @include t.head();
+        }
+        
+
+            &--head2 {
+                color: $logo-bg-color;
+                @include t.head();
+            }       
+
+
+
+            @media screen and (max-width:$logo-breakpoint) {
+                width: 100%;
+            }
+    }
+   
+}

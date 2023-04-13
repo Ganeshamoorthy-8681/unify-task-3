@@ -1,0 +1,145 @@
+@use "typography" as t;
+@import "config";
+@import "variables";
+@import "mixins";
+
+.navbar {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0px auto;
+    padding: 15px 10px;
+    @include flexible($justify:space-around);
+
+    //all links wrapped including brand logo
+    &__links {
+        width: 70%;
+        @include flexible( $justify:flex-start, $gap:2.5%);
+
+        //brand name or logo
+        &--title{
+            @include brand-logo();
+        }
+
+        //each link
+        &--link{
+               color: $link-color;
+                border-radius: 5px;
+                padding: 5px;
+                @include t.links();
+            
+                &:hover {
+                    color: $logo-bg-color;
+                }
+
+                @media screen and (max-width: $max-width-value ) {
+                    display: none;
+                }
+        }
+    }
+
+    //hamburger menu  
+    &__menu-icon {
+        @extend %icon-style;
+        display: none;
+       
+        background: url("/unify-task-3/images/menu_FILL0_wght400_GRAD0_opsz48.svg");
+
+        @media screen and (max-width: $max-width-value) {
+            display: block;
+        }
+    }
+
+
+    //login and signup buttons
+
+    &__buttons {
+        
+        @include flexible($gap: 25px);
+      
+        &--login {
+           @include login-btn();
+        }
+
+        &--signup {
+            padding: 6px;
+            @include signup-btn();
+        }
+
+        @media screen and (max-width:$max-width-value) {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width:$max-width-value) {
+        justify-content: flex-start;       
+    }
+}
+
+
+//This style  for a mobile view 
+.navbar__mobile-view{
+    width: 0px;
+    transition: width 0.3s, opacity 0.2s;
+    padding: 20px;
+    position: absolute;
+    top:0;
+    right: 0 ;
+    background-color: $nav-mobile-bg-color;
+
+   &--close-icon{
+    @extend %icon-style;
+    background: url(unify-task-3/images/xmark-solid.svg);
+    background-repeat: no-repeat;
+}
+
+&--title{
+        @include brand-logo();
+        padding-left: 10px;
+}
+
+
+   &--link{
+    margin: 8px 5%;
+    color:$link-color;
+    @include t.links();
+
+    @include flexible($justify:space-between);
+     & i{
+        align-self: center;
+     }
+
+    &:hover {
+        color: $logo-bg-color;
+    }
+
+}
+
+&--login-button{
+    margin: 5px  5%;  
+    @include login-btn();
+}
+&--signup-button{
+    margin: 3%;
+    @include signup-btn();
+}
+
+//shows  dropdown 
+&--expanded{
+        width: min(300px, 100vw);
+        height: min(350px, 120vh);
+        z-index: 2;
+        visibility: visible;
+        opacity: 1;
+}
+
+
+//hides dropdown also default
+&--compressed{
+        overflow: hidden;
+        visibility: hidden;
+        width: 0%;
+        height: 0%;
+        opacity: 0;
+}
+
+}
