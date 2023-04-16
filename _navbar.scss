@@ -42,7 +42,7 @@
         @extend %icon-style;
         display: none;
        
-        background: url("/unify-task-3/images/menu_FILL0_wght400_GRAD0_opsz48.svg");
+        background: url("/images/menu_FILL0_wght400_GRAD0_opsz48.svg");
 
         @media screen and (max-width: $max-width-value) {
             display: block;
@@ -78,7 +78,6 @@
 
 //This style  for a mobile view 
 .navbar__mobile-view{
-    width: 0px;
     transition: width 0.3s, opacity 0.2s;
     padding: 20px;
     position: absolute;
@@ -88,7 +87,7 @@
 
    &--close-icon{
     @extend %icon-style;
-    background: url(unify-task-3/images/xmark-solid.svg);
+    background: url(/images/xmark-solid.svg);
     background-repeat: no-repeat;
 }
 

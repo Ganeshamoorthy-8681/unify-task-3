@@ -38,9 +38,3 @@ match.addEventListener("change",()=>{
     if (! match.matches)
         close_mobile_nav()
 })
-
-
-
-
-
-

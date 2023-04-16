@@ -35,4 +35,13 @@ body{
 }
 
 
-
+@mixin button-learnmore(){
+    font-size: 1.1rem;
+}
+@mixin description(){
+    font-size: 1.2rem;
+}
+@mixin key-features-list(){
+    // line-height: 1.7;
+    font-size: 1.2rem;
+}
