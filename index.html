@@ -6,53 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="../app.css">
     <title>Unify</title>
 </head>
 <body>
     <!-- this is a overlay used when the menu icons are clicked  -->
     <div id="overlay"></div>
+
     <!-- Naviagtion bar  -->
-    <nav class="navbar">
+        <nav class="navbar">    
+                <!--This has all links  including brand logo-->
+            <ul class="navbar__links">
+                    <li class="navbar__links--title" title="Welcome to Unify we serve what You need">unify</li>
+                    <li > <a href="#" class="navbar__links--link">Landing <i class="fa caret-down">&#xf0d7;</i></a></li>
+                    <li > <a href="#" class="navbar__links--link" >Pages <i class="fa caret-down">&#xf0d7; </i></a></li>
+                    <li > <a href="#" class="navbar__links--link">Blog <i class="fa caret-down">&#xf0d7; </i></a></li>
+                    <li > <a href="#" class="navbar__links--link">Docs </a></li>
+            </ul>
+            <!-- this is a menu icon which is added in mobile view (hamburger menu) -->
+            
+            <span class="navbar__menu-icon"></span>
+            
+            <!-- This are the buttons in navbar (login and signup button) -->
+            <div class="navbar__buttons">
+                <button class="navbar__buttons--login">Log in </button>
+                <button class="navbar__buttons--signup">Sign up</button>
+            </div>
 
-        <ul class="navbar__links">
-            <!--This has all links  including brand logo-->
-                <li class="navbar__links--title" title="Welcome to Unify we serve what You need">Unify</li>
-                <li > <a href="#" class="navbar__links--link">Landing <i class="fa ">&#xf0d7;</i></a></li>
-                <li > <a href="#" class="navbar__links--link" >Pages <i class="fa ">&#xf0d7; </i></a></li>
-                <li > <a href="#" class="navbar__links--link">Blog <i class="fa ">&#xf0d7; </i></a></li>
-                <li > <a href="#" class="navbar__links--link">Docs <i class="fa">&#xf0d7; </i></a></li>
-        </ul>
-        <!-- this is a menu icon which is added in mobile view (hamburger menu) -->
-        <span class="navbar__menu-icon"></span>
-        <!-- THis  are the buttons  in navbar login and signup button -->
-        <div class="navbar__buttons">
-            <button class="navbar__buttons--login">Log in </button>
-            <button class="navbar__buttons--signup">Sign up</button>
-        </div>
-        <!-- this is a mobile dropdown  -->
-        <ul class="navbar__mobile-view navbar__mobile-view--compressed">
-            <li class="navbar__mobile-view--title" title="Welcome to Unify we serve what You need">Unify <i class="navbar__mobile-view--close-icon"></i></li>
-            <li><a href="#" class="navbar__mobile-view--link"> Landing <i class="fa ">&#xf0d7;</i></a></li>
-            <li><a href="#" class="navbar__mobile-view--link" >Pages <i class="fa ">&#xf0d7; </i></a></li>
-            <li><a href="#" class="navbar__mobile-view--link">Blog <i class="fa ">&#xf0d7; </i></a></li>
-            <li><a href="#" class="navbar__mobile-view--link">Docs <i class="fa">&#xf0d7; </i></a></li>
-            <button class="navbar__mobile-view--login-button"> Log in </button> <br>
-            <button class="navbar__mobile-view--signup-button"> Sign up</button>
-        </ul>
-    </nav>
-
+                <!-- this is a mobile dropdown  -->
+            <ul class="navbar__mobile-view navbar__mobile-view--compressed">
+                <li class="navbar__mobile-view--title" title="Welcome to Unify we serve what You need">unify <i class="navbar__mobile-view--close-icon"></i></li>
+                <li><a href="#" class="navbar__mobile-view--link"> Landing <i class="fa ">&#xf0d7;</i></a></li>
+                <li><a href="#" class="navbar__mobile-view--link" >Pages <i class="fa ">&#xf0d7; </i></a></li>
+                <li><a href="#" class="navbar__mobile-view--link">Blog <i class="fa ">&#xf0d7; </i></a></li>
+                <li><a href="#" class="navbar__mobile-view--link">Docs <i class="fa">&#xf0d7; </i></a></li>
+                <button class="navbar__mobile-view--login-button"> Log in </button> <br>
+                <button class="navbar__mobile-view--signup-button"> Sign up</button>
+            </ul>
+        </nav>
     <!-- content of the body starts -->
     <div class="container-1">
 
-       <div class="container-1__img--wrapper">
+       <div class="container-1__img--wrapper--left-side">
            <img class="container-1__img" src="images/logo-2.svg" alt="this is a logo" >
        </div>
     
 
         <div class="container-1__content">
-
-            <b class="container-1__content--quote">SMALL BUSSINESS SOLUTION</b>
+            <b class="container-1__content--quote"> SMALL BUSSINESS SOLUTION </b>
             <span class="container-1__content--head1">Turn Online Shoppers into</span> 
             <span class="container-1__content--head2">lifetime customers</span>
 
@@ -72,8 +73,8 @@
                             alt="">
 
                         <svg width="30px" height="30px" class="container-1__content--avatars--icon">
-                            <circle r="15px" cx="13" cy="15" fill="#28374a"></circle>
-                            <text x="6" y="17" font-size="small" fill="white">7k</text>
+                            <circle r="15px" cx="12" cy="15" fill="#28374a"></circle>
+                            <text x="4" y="15" font-size="small" fill="white">7k</text>
                         </svg>
 
                     </div>
@@ -90,7 +91,8 @@
                     <button type="menu">Gets Started</button>
                   </div>
         </div>
-        <div class="container-1__img--wrapper">
+
+        <div class="container-1__img--wrapper--right-side">
             <img class="container-1__img" src="images/logo-3.svg" alt="this is a logo"> 
         </div>
     </div>
@@ -102,7 +104,7 @@
         </div>
     <div class="container-2__content">
                 <h1 class="container-2__content--head">Interfaces-our core skill</h1>
-                <p class="container-2__content--description">Analytic dashboard ,platforms, and social newtworks-we have
+                <p class="container-2__content--description">Analytic dashboard, platforms, and social newtworks-we have
                     strong cases in <b>edtech, recruitment , data privacy and finance </b></p>
                 <ul class="container-2__content--key-features-list">
                     <li><span class="container-2__content--tick-icon"><img src="images/check-solid.svg"></span>
@@ -120,6 +122,7 @@
                 </button>
         </div>
     </div>
+
     <div class="container-3">
    
     <div class="container-3__content">
@@ -152,46 +155,382 @@
     </div>
 
      <div class="container-4">
+
         <div class="container-4__img--wrapper">
             <img src="images/content-img-3.jpg" class="container-4__img">
         </div>
 
         <div class="container-4__content">
-            <div>
                 <h1 class="container-4__content--head">Developing all things digital for designers and agencies.</h1>
                 <p class="container-4__content--description"> We help agencies and designers
                     transform <b>concepts into digital products </b>that stand the test of time.
                 </p>
 
-                <!-- <div class="unify-features">
-                    <p class="unify-features-row">
-                        <span class="unify-features-col">Unify Wallet app &nbsp;<img class="arrow-right-icon"
-                                src="images/arrow-right-solid_black.svg" alt=""></span>
-                        <span class="unify-features-col">Unify debit app &nbsp;<img class="arrow-right-icon"
-                                src="images/arrow-right-solid_black.svg" alt=""></span>
+                <div class="container-4__content--key-features-list">
+
+                    <p class="container-4__content--key-features-list--col">
+                        <span>Unify Wallet app &nbsp; 
+                            <img src="images/arrow-right-solid_black.svg" alt=""
+                              class="container-4__content--key-features-list--col--arrow-icon"></span>
+
+                        <span>Automatic saving &nbsp;<img 
+                            src="images/arrow-right-solid_black.svg" alt=""
+                              class="container-4__content--key-features-list--col--arrow-icon"></span>
+                        
+                        <span>529 college saving  &nbsp;<img
+                        src="images/arrow-right-solid_black.svg" alt=""
+                          class="container-4__content--key-features-list--col--arrow-icon"></span>
                     </p>
-                    <p class="unify-features-row">
-                        <span class="unify-features-col">Automatic saving &nbsp;<img class="arrow-right-icon"
-                                src="images/arrow-right-solid_black.svg" alt=""></span>
-                        <span class="unify-features-col">Unify Cashout &nbsp;<img class="arrow-right-icon"
-                                src="images/arrow-right-solid_black.svg" alt=""></span>
+
+
+                    <p class="container-4__content--key-features-list--col">
+                        <span>Unify debit app  &nbsp; <img
+                                src="images/arrow-right-solid_black.svg" alt="" 
+                                class="container-4__content--key-features-list--col--arrow-icon"></span>
+                        
+
+                        <span >Unify Cashout  &nbsp; <img 
+                                src="images/arrow-right-solid_black.svg" alt=""
+                                  class="container-4__content--key-features-list--col--arrow-icon"></span>
+
+                        <span>Retirement saving &nbsp;<img
+                        src="images/arrow-right-solid_black.svg" alt=""
+                        class="container-4__content--key-features-list--col--arrow-icon"></span>
                     </p>
-                    <p class="unify-features-row">
-                        <span class="unify-features-col">529 college saving &nbsp; <img class="arrow-right-icon"
-                                src="images/arrow-right-solid_black.svg" alt=""></span>
-                        <span class="unify-features-col">Retirement saving &nbsp; <img class="arrow-right-icon"
-                                src="images/arrow-right-solid_black.svg" alt=""></span>
-                    </p>
-                </div> -->
-            </div>
+
+                </div>
         </div>
     </div> 
 
+    <div class="container-5">
+
+            <h1 class="container-5--head">A Brief<br>History of Unify</h1>
+
+            <div class="container-5__timeline">
+                 
+                <div class="container-5__timeline__element">
+
+                    <div class="container-5__timeline__element__time">
+                        <h1 class="container-5__timeline__element__time--day">Today</h1>
+                        <h1 class="container-5__timeline__element__time--year">Present</h1>
+                    </div>
+
+                    <div class="container-5__timeline__element__achievement">
+
+                        <b> 5 Releases later...</b> <br> 
+                        <p>Continuous feedback, research, and communication drive our vision for a future where a remote works.</p>
 
 
+                    </div>
+                     
+                </div>
+                 <div class="container-5__timeline__element">
+
+                    <div class="container-5__timeline__element__time">
+                        <h1 class="container-5__timeline__element__time--day">June</h1>
+                        <h2 class="container-5__timeline__element__time--year">2020</h2>
+                    </div>
+
+                    <div class="container-5__timeline__element__achievement">
+
+                        <b>Theme releases</b> <br> 
+                        <p>Sales engagement tools expand to include native email functionality</p>
+                    </div>
+                     
+                </div>
+                 <div class="container-5__timeline__element">
+
+                    <div class="container-5__timeline__element__time">
+                        <h1 class="container-5__timeline__element__time--day">July</h1>
+                        <h2 class="container-5__timeline__element__time--year">2018</h2>
+                    </div>
+
+                    <div class="container-5__timeline__element__achievement">
+
+                        <b> Official beta launch</b>
+                        <p>We release the Sales Marketplace, allowing clients to discover and hire directly from Overpass</p>
 
 
+                    </div>
+                     
+                </div>
+                 <div class="container-5__timeline__element">
 
+                    <div class="container-5__timeline__element__time">
+                        <h1 class="container-5__timeline__element__time--day">March</h1>
+                        <h2 class="container-5__timeline__element__time--year">2017</h2>
+                    </div>
+
+                    <div class="container-5__timeline__element__achievement">
+
+                        <b>Early addtion</b> <br> 
+                        <p>Our first features relesed with a high demand.</p>
+                    </div>
+                </div>
+            </div>
+
+        
+       
+    </div>
+
+ 
+    <div class="container-6">
+        <div class="container-6__img--wrapper">
+            <img src="images/content-img-4 (1).jpg" alt="" class="container-6__img">
+        </div>
+            <div class="container-6__content">
+                <span class="container-6__content--client">FEATURING CLIENT</span> <br>
+                <b class="container-6__content--client-words">To say that switching to unify has been life-changing
+                    is an understatement. My business has tripled and i got my life back. </b>
+                <br>
+                <b class="container-6__content--client-name">Nicole Grazioso</b>
+                <span class="container-6__content--client-designation">Director Payments & Risk | Airbnb</span>
+                <button class="container-6__content--client-story-read-btn">Read the story</button>
+            </div>
+    </div>
+
+    <div class="container-7">
+        <div class="container-7__head">  <span>Solo, agency or team? We got you covered </span> </div>
+          
+        <div class="container-7__cards">
+            <div class="container-7__card">
+
+                <div class="container-7__card--subscription-type"> <b> Professional</b> </div>
+                <div class="container-7__card--subscription-short-note">Everything a small team needs</div>
+                <div class="container-7__card--subsciption-price--wrapper"> 
+                    <span class="container-7__card--subsciption-price"> <span>$18</span><span><b>.99</b></span></span>
+                    <span class="container-7__card--subsciption-currency-type"> &nbsp;USD/monthly</span>
+                </div>
+
+                    <div class="container-7__card--subscription-details">
+
+                        <ul class="container-7__card--subscription-benefits">
+                
+                            <li><span class="container-7__card--subscription-benefits--tick-icon">
+                                <img src="images/check-solid-2.svg"></span>&nbsp;
+                              <span>Up to 10 people</span> </li>
+
+                            <li><span class="container-7__card--subscription-benefits--tick-icon">
+                                <img src="images/check-solid-2.svg"></span>&nbsp;
+                              <span>Collect data</span> </li>
+
+                            <li><span class="container-7__card--subscription-benefits--tick-icon">
+                                <img src="images/check-solid-2.svg"></span>&nbsp;
+                              <span>Code extensibility</span> </li>
+                        </ul>
+
+                        <ul class="container-7__card--subscription-drawbacks">
+
+                            <li><span class="container-7__card--subscription-drawbacks--tick-icon">
+                                <img src="images/xmark-solid.svg"></span>&nbsp;
+                              <span>Custom reports</span> </li>
+
+                            <li><span class="container-7__card--subscription-drawbacks--tick-icon">
+                                <img src="images/xmark-solid.svg"></span>&nbsp;
+                              <span>Product support</span> </li>
+
+                            <li><span class="container-7__card--subscription-drawbacks--tick-icon">
+                                <img src="images/xmark-solid.svg"></span>&nbsp;
+                              <span>Activity reporting</span> </li>
+
+
+                        </ul>
+
+
+                    </div>
+
+                    <div class="container-7__card--free-trail">
+
+                        <div> Cancel any time. <br> No card required</div>
+                        <button>Start free trail</button>
+                    </div>
+            </div>
+
+              <div class="container-7__card-popular">
+                <div class="container-7__card-popular--subscription--popular">Most popular</div>
+                <div class="container-7__card-popular--subscription-type"> <b> Teams</b> </div>
+                <div class="container-7__card-popular--subscription-short-note">For growing business</div>
+                <div class="container-7__card-popular--subsciption-price--wrapper"> 
+                    <span class="container-7__card-popular--subsciption-price"> <span>$36</span><span><b>.99</b></span></span>
+                    <span class="container-7__card-popular--subsciption-currency-type">&nbsp;USD/monthly</span>
+                </div>
+
+                    <div class="container-7__card-popular--subscription-details">
+
+                        <ul class="container-7__card-popular--subscription-benefits">
+                
+                            <li><span class="container-7__card-popular--subscription-benefits--tick-icon">
+                                <img src="images/check-solid-2.svg"></span>&nbsp;
+                              <span>Up to 10 people</span> </li>
+
+                            <li><span class="container-7__card-popular--subscription-benefits--tick-icon">
+                                <img src="images/check-solid-2.svg"></span>&nbsp;
+                              <span>Collect data</span> </li>
+
+                            <li><span class="container-7__card-popular--subscription-benefits--tick-icon">
+                                <img src="images/check-solid-2.svg"></span>&nbsp;
+                              <span>Code extensibility</span> </li>
+                        </ul>
+
+                        <ul class="container-7__card-popular--subscription-benefits">
+
+                            <li><span class="container-7__card-popular--subscription-benefits--tick-icon">
+                             <img src="images/check-solid-2.svg"></span>&nbsp;
+                              <span>Custom reports</span> </li>
+
+                            <li><span class="container-7__card-popular--subscription-benefits--tick-icon">
+                              <img src="images/check-solid-2.svg"></span>&nbsp;
+                              <span>Product support</span> </li>
+
+                            <li><span class="container-7__card-popular--subscription-benefits--tick-icon">
+                             <img src="images/check-solid-2.svg"></span>&nbsp;
+                              <span>Activity reporting</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="container-7__card-popular--free-trail">
+                        <span> Cancel any time.<br>No card required</span>
+                        <button>Start free trail</button>
+                   </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-8">
+
+        <div class="container-8--head">
+            Frequently asked question
+        </div>
+
+        <div class="container-8__content">
+
+        <details>
+                <summary>What method of payments are supported?</summary>
+                <div>
+                    You can purchase the themes on Bootstrap Themes via any major credit/debit card
+                    (Via Stripe) or with your Paypal account.We dont support cryptocurrencies or invoicing at this time.
+                </div>
+        </details>
+
+        <details>
+            <summary>Can i cancel anytime?</summary>
+            <div>
+                You can purchase the themes on Bootstrap Themes via any major credit/debit card
+                (Via Stripe) or with your Paypal account.We dont support cryptocurrencies or invoicing at this time.
+            </div>
+        </details>
+
+        <details>
+            <summary>How do i get a receipe for my purchase?</summary>
+            <div>
+                You can purchase the themes on Bootstrap Themes via any major credit/debit card
+                (Via Stripe) or with your Paypal account.We dont support cryptocurrencies or invoicing at this time.
+            </div>
+        </details>
+
+        <details>
+            <summary>Which license do i need?</summary>
+            <div>
+                You can purchase the themes on Bootstrap Themes via any major credit/debit card
+                (Via Stripe) or with your Paypal account.We dont support cryptocurrencies or invoicing at this time.
+            </div>
+        </details>
+
+
+        <details>
+            <summary>How do i get access to a theme I purchased?</summary>
+            <div>
+                You can purchase the themes on Bootstrap Themes via any major credit/debit card
+                (Via Stripe) or with your Paypal account.We dont support cryptocurrencies or invoicing at this time.
+            </div>
+        </details>
+        <details>
+            <summary>Upgrade license type?</summary>
+            <div>
+                You can purchase the themes on Bootstrap Themes via any major credit/debit card
+                (Via Stripe) or with your Paypal account.We dont support cryptocurrencies or invoicing at this time.
+            </div>
+        </details>
+
+        </div>
+    </div>
+
+ 
+
+        <footer class="footer">
+            <div class="footer--head">
+                <div class="footer--head--description">Join the thriving <br> <span>Unify</span> business agency</div>
+                    <div>
+                            <button class="footer--head--request-demo-btn">Request demo</button>
+                            <button class="footer--head--sign-up-btn">Sign up free
+                            <img src="images/arrow-right-solid.svg" alt=""> </button>
+                    </div>
+            </div>
+    
+        <div class="footer__content">
+            <div class="footer__content--footer-links">
+                    <ul class="footer__content--links-col">
+                            <li class="footer__content--links-col--head"><b>RESOURCES</b></li>
+                            <li>Blog</li>
+                            <li>Guidance</li>
+                            <li>Customer stories</li>
+                            <li><img src="images/up-right-from-square-solid.svg"alt=""> Support</li>
+                            <li>API</li>
+                            <li>packages</li>
+                        </ul>
+                        <ul class="footer__content--links-col" >
+                            <li class="footer__content--links-col--head"><b>COMPANY</b></li>
+                            <li>
+                            <img src="images/up-right-from-square-solid.svg" alt=""> Belonging</li>
+                            <li>Careers  <b style="color:#0abf54">&#9866; we are hiring</b></li>
+                            <li>Customer stories</li>
+                            <li>Contacts</li>
+                            <li>Security</li>
+                        </ul>
+    
+    
+                        <ul class="footer__content--links-col">
+                            <li class="footer__content--links-col--head"><b>PLATFORM</b> </li>
+                            <li>Web</li>
+                            <li>Mobile</li>
+                            <li>ios</li>
+                            <li>Android</li>
+                            <li>Figma importing</li>
+                        </ul>
+                
+                    
+                        <ul class="footer__content--links-col">
+                            <li class="footer__content--links-col--head"><b>LEGAL</b></li>
+                            <li>Terms of use</li>
+                            <li>Privacy Policy</li>
+                            <li class="footer__content--links-col--head"><b>Docs</b></li>
+                            <li>Documentation</li>
+                            <li>Snippets</li>
+                        </ul>
+                        <ul class="footer__content--links-col">
+                            <li class="footer__content--links-col--head"><b>FOLLOW US</b></li>
+                            <li><img src="images/envelope-open-solid.svg"alt=""> Subscribe by email</li>
+                            <li><img src="images/facebook.svg"> Facebook</li>
+                            <li><img src="images/linkedin.svg" alt=""> Linkedin</li>
+                            <li><img src="images/twitter.svg" alt=""> Twitter</li>
+                            <li><img src="images/slack.svg" alt=""> slack</li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__content--others">
+                        <div>
+                        <span>Privacy and policy</span> &nbsp;
+                        <span>Terms</span> &nbsp;
+                        <span>status</span> &nbsp;
+                        <span>English </span>
+                        </div>
+                
+                    <span><img src="images/copyright-solid.svg" alt=""> Unify.2023</span>
+                    </div>
+            </div>
+        </footer>
+    
+    
     <script src="/app.js"></script>
 </body>
 </html>
