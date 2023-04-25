@@ -157,7 +157,7 @@ body {
   background-color: rgb(252, 252, 252);
 }
 .navbar__mobile-view--close-icon {
-  background: url(unify-task-3/images/xmark-solid.svg);
+  background: url(./images/xmark-solid.svg);
   background-repeat: no-repeat;
 }
 .navbar__mobile-view--title {
