@@ -111,7 +111,7 @@ body {
 }
 .navbar__menu-icon {
   display: none;
-  background: url("/unify-task-3/images/menu_FILL0_wght400_GRAD0_opsz48.svg");
+  background: url("./images/menu_FILL0_wght400_GRAD0_opsz48.svg");
 }
 @media screen and (max-width: 43.75em) {
   .navbar__menu-icon {
